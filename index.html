@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Сервис комментариев со спам-фильтром</h1>
+    <section>
+        <div class="comment">
+            <h2>Оставьте ваш комментарий</h2>
+            Введите ФИО
+            <input class="comment__name" type="text">
+            Введите ссылку на ваш аватар
+            <input class="comment__url">
+            Оставьте комментарий
+            <input class="comment__text">
+            <button class="button"> Отправить</button>
+        </div>
+        <div class="chat">
+            <h2>Чат</h2>
+            <div class="user">
+                <!-- <div id="img"></div> -->
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        let userName = document.querySelector('.comment__name');
+
+        let photo = document.querySelector('.comment__url');
+
+        let comment = document.querySelector('.comment__text');
+
+        const btn = document.querySelector('.button');
+        let chat = document.querySelector('.user');
+
+        btn.addEventListener('click', () => {
+            chat.innerHTML = `<img src="${photo.value}" alt="img">
+            <p id="name">${userName.value.toLowerCase()}</p>
+            <p id="ask">${comment.value.toLowerCase()}</p>`;
+
+        })
+    </script>
+
+
+</body>
+
+</html>
