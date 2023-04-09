@@ -19,7 +19,7 @@
             Введите ссылку на ваш аватар
             <input class="comment__url">
             Оставьте комментарий
-            <input class="comment__text">
+            <textarea class="comment__text" rows="500" cols="25"></textarea>
             <button class="button"> Отправить</button>
         </div>
         <div class="chat">
@@ -54,7 +54,7 @@
                 .toLowerCase(); //Перезаписываю в правильном регистре
 
             chat.innerHTML = // создаю новую разметку в чате и передаю туда отредактированные значения ФИО (с антиспамом) и комментария
-                `<img src="${photo.value}" alt="your avatar"> 
+                `<img src="${photo.value}" alt="add a link for a photo"> 
             <p id="name">${nameUp.replace(/viagra/gi, '***').replace(/xxx/gi, '***')}</p> 
             <p id="ask">${comment1}</p>`
         })
