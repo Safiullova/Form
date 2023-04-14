@@ -8,7 +8,7 @@ h2 {
 }
 section {
     display: flex;
-width: 1200px;
+width: 1300px;
 justify-content: center;
 
 }
@@ -18,9 +18,22 @@ justify-content: center;
     flex-direction: column;
     width: 400px;
     height: 500px;
-    margin: 3%;
+    margin: 2%;
     justify-content: space-around;
 }
+
+.check {
+display: flex;
+}
+
+legend {
+    padding-right: 15px;
+}
+
+.checkbox-item {
+    margin-right: 15px;
+}
+
 .button {
     background-color:  #3939eb;
     width: 100px;
@@ -32,8 +45,8 @@ justify-content: center;
 .chat{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    margin: 3%;
+    width: 900px;
+    margin: 2%;
 }
 
 .user {
@@ -55,13 +68,22 @@ input, textarea {
 
 
 #name {
-    width:200px;
+    width:300px;
     height: 20px;
-
+    margin-left: 20px;
+    color: #3939eb;
 }
 
+#date {
+    width:200px;
+    height: 20px;
+    text-align: end;
+    color: #3939eb;
+}
+
+
 #ask {
-    width: 500px;
+    width: 720px;
     height: fit-content;
     padding-bottom: 20px;
     border-bottom: 2px dashed #3939eb;
