@@ -48,14 +48,19 @@ legend {
     width: 900px;
     margin: 2%;
 }
-
+/* 
 .user {
     display: flex;
     flex-wrap: wrap;
+} */
+.userX {
+    display: flex;
+    flex-wrap: wrap;
 }
+
 img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border: 2px dashed #3939eb;
 }
 
