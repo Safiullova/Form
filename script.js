@@ -15,8 +15,8 @@
             "./assets/pic6.jpg",
             "./assets/pic7.jpg"
         ];
-        let randIndex = Math.floor(Math.random() * arrAvatar.length); // определяю индекс радномного примитива из массива
-let avatarURL = arrAvatar[randIndex]; // вывожу значение (где лежит) радномного аватара
+//         let randIndex = Math.floor(Math.random() * arrAvatar.length); // определяю индекс радномного примитива из массива
+// let avatarURL = arrAvatar[randIndex]; // вывожу значение (где лежит) радномного аватара
 
 let addSting = ''; // Грязная функция. почему-то она убивает рандомность аватарок при повторном клике((
 
@@ -43,8 +43,9 @@ let addSting = ''; // Грязная функция. почему-то она у
                 .toLowerCase(); //Перезаписываю в правильном регистре
 
                 let avatarFinal = ""; // переменная для ссылки на аватар
-                if (photo.value === '') { // Проверяю, заполнено поле ввода ссылки
-                    avatarFinal = avatarURL // если нет - рандомный аватар
+                if (!photo.value) { // Проверяю, заполнено ли поле ввода ссылки
+                avatarURL = arrAvatar[Math.floor(Math.random() * arrAvatar.length)]
+                avatarFinal = avatarURL // если нет - рандомный аватар
             } else {
                 avatarFinal = photo.value // если да - тот, что указал user
             };
