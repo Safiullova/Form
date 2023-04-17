@@ -12,6 +12,7 @@
             "./assets/pic3.webp",
             "./assets/pic4.png",
             "./assets/pic5.jpg",
+            "./assets/pic6.jpg",
             "./assets/pic7.jpg"
         ];
         let randIndex = Math.floor(Math.random() * arrAvatar.length); // определяю индекс радномного примитива из массива
